@@ -1,3 +1,5 @@
+import os
+
 import requests
 from allure_commons._allure import step
 from allure_commons.types import AttachmentType
@@ -9,10 +11,9 @@ import logging
 from time import sleep
 
 
-LOGIN = "test@qa.guru.com"
-PASSWORD = "123456"
-# LOGIN = "example1200@example.com"
-# PASSWORD = "123456"
+
+LOGIN = os.getenv('LOGIN')
+PASSWORD = os.getenv('PASSWORD')
 WEB_URL = "https://demowebshop.tricentis.com/"
 API_URL = "https://demowebshop.tricentis.com/"
 
@@ -124,6 +125,5 @@ def test_add_book_to_cart():
 
     with step('Checking cart for added book'):
         browser.element('.cart').should(have.text('Health Book'))
-
 
 
