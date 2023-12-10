@@ -1,5 +1,4 @@
 import os
-
 import requests
 from allure_commons._allure import step
 from allure_commons.types import AttachmentType
@@ -8,7 +7,7 @@ from selene.support.conditions import have
 import allure
 import json
 import logging
-from time import sleep
+
 
 
 
