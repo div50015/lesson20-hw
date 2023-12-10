@@ -18,7 +18,7 @@ WEB_URL = "https://demowebshop.tricentis.com/"
 API_URL = "https://demowebshop.tricentis.com/"
 
 
-def test_login_through_api():
+def test_login_through_api(browser_setup):
     with step("Login with API"):
         result = requests.post(
             url=API_URL + "/login",
@@ -48,7 +48,7 @@ def test_login_through_api():
 
 
 
-def test_add_laptop_to_cart():
+def test_add_laptop_to_cart(browser_setup):
     with step("Adding to cart a lapton"):
         result = requests.post(
             url=API_URL + '/addproducttocart/details/31/1',
@@ -75,7 +75,7 @@ def test_add_laptop_to_cart():
 
 
 
-def test_add_smartphone_to_cart():
+def test_add_smartphone_to_cart(browser_setup):
     with step("Adding to cart a smartphone"):
         result = requests.post(
             url=API_URL + '/addproducttocart/details/43/1',
@@ -101,7 +101,7 @@ def test_add_smartphone_to_cart():
         browser.element('.cart').should(have.text('Smartphone'))
 
 
-def test_add_book_to_cart():
+def test_add_book_to_cart(browser_setup):
     with step("Adding to cart a book"):
         result = requests.post(
             url=API_URL + '/addproducttocart/details/22/1',
