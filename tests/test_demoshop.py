@@ -1,14 +1,12 @@
 import os
 import requests
+import json
+import allure
+import logging
 from allure_commons._allure import step
 from allure_commons.types import AttachmentType
 from selene import browser
 from selene.support.conditions import have
-import allure
-import json
-import logging
-
-
 
 
 LOGIN = os.getenv('LOGIN')
@@ -43,8 +41,6 @@ def test_login_through_api(browser_setup):
 
     with step("Verify successful authorization"):
         browser.element('.account').should(have.text(f'{LOGIN}'))
-
-
 
 
 def test_add_laptop_to_cart(browser_setup):
