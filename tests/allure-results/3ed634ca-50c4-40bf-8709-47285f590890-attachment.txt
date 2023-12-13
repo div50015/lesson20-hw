@@ -1,0 +1,1 @@
+<RequestsCookieJar[<Cookie ARRAffinity=04be1de392551a8d3aa8a139a273dde373561dc00eefb1f68488b4730cafbc04 for .demowebshop.tricentis.com/>, <Cookie ARRAffinitySameSite=04be1de392551a8d3aa8a139a273dde373561dc00eefb1f68488b4730cafbc04 for .demowebshop.tricentis.com/>, <Cookie Nop.customer=28a7364f-e9d0-420e-a790-ed459b92b18c for demowebshop.tricentis.com/>]>

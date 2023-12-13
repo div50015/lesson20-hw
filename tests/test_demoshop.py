@@ -13,7 +13,7 @@ LOGIN = os.getenv('LOGIN')
 PASSWORD = os.getenv('PASSWORD')
 WEB_URL = "https://demowebshop.tricentis.com/"
 API_URL = "https://demowebshop.tricentis.com/"
-
+cookie = ''
 
 def test_login_through_api(browser_setup):
     with step("Login with API"):

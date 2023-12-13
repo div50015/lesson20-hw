@@ -1,0 +1,5 @@
+INFO     root:test_demoshop.py:28 https://demowebshop.tricentis.com//login
+INFO     root:test_demoshop.py:29 302
+INFO     root:test_demoshop.py:30 <html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="/">here</a>.</h2>
+</body></html>

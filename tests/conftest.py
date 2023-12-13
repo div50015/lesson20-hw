@@ -40,7 +40,7 @@ def browser_setup(request):
     driver = webdriver.Remote(command_executor=f"https://{login}:{password}@selenoid.autotests.cloud/wd/hub", options=options)
 
     browser.config.driver = driver
-    browser.config.base_url = 'https://demoqa.com/automation-practice-form'
+    # browser.config.base_url = 'https://demoqa.com/automation-practice-form'
     browser.config.timeout = 2.0
     browser.config.window_width = 1500
     browser.config.window_height = 1080
